@@ -1,0 +1,5 @@
+SELECT count (facility_sub_region_1) AS NUM_US_STATE
+FROM bigquery-public-data.covid19_vaccination_access.facility_boundary_us_all
+where travel_time_threshold_minutes = 15
+AND facility_sub_region_1 = &quot;New York&quot;
+AND mode_of_transportation = &quot;walk&quot;;
